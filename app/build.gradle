@@ -26,7 +26,7 @@ dependencies {
 
 application {
     // Define the main class for the application.
-    mainClass = 'playground.App'
+    mainClass = 'playground.Main'
 }
 
 tasks.named('test') {
