@@ -1,7 +1,6 @@
-package playground.assignments;
+package playground.micsj3;
 
 import javax.swing.*;
-import java.awt.*;
 
 class NewFrame extends JFrame {
     public NewFrame() {

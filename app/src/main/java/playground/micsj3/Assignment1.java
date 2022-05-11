@@ -1,4 +1,4 @@
-package playground.assignments;
+package playground.micsj3;
 
 
 class Student {
@@ -46,17 +46,17 @@ class Lesson {
     private String teacher; // 担当者
     private int max;        // 最大履修者数
     private int num;        // 登録履修者数
-    private playground.assignments.Student[] st;   // Studentの配列
+    private playground.micsj3.Student[] st;   // Studentの配列
 
     public Lesson(String name, String teacher, int max) {
         this.name = name;
         this.teacher = teacher;
         this.max = max;
         this.num = 0;          // numは0に初期化
-        this.st = new playground.assignments.Student[max]; // 配列の確保(オブジェクトは別に生成する必要あり)
+        this.st = new playground.micsj3.Student[max]; // 配列の確保(オブジェクトは別に生成する必要あり)
     }
 
-    public void add(playground.assignments.Student s) {
+    public void add(playground.micsj3.Student s) {
         this.st[this.num++] = s;
     }
 
@@ -73,11 +73,11 @@ class Lesson {
 
 public class Assignment1 {
     public void execute() {
-        playground.assignments.Lesson l = new playground.assignments.Lesson("Pro Enshu", "Yanai", 100);
-        l.add(new playground.assignments.Student("01220", "Dentsu Taro", 80));
-        l.add(new playground.assignments.Student("012205", "Uec Jiro", 54));
-        l.add(new playground.assignments.Student("012207", "Chofu Saburo", 70));
-        l.add(new playground.assignments.Student("012210", "Enshu Shiro", 60));
+        playground.micsj3.Lesson l = new playground.micsj3.Lesson("Pro Enshu", "Yanai", 100);
+        l.add(new playground.micsj3.Student("01220", "Dentsu Taro", 80));
+        l.add(new playground.micsj3.Student("012205", "Uec Jiro", 54));
+        l.add(new playground.micsj3.Student("012207", "Chofu Saburo", 70));
+        l.add(new playground.micsj3.Student("012210", "Enshu Shiro", 60));
         l.print();
     }
 }

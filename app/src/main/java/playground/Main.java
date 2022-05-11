@@ -1,7 +1,7 @@
 package playground;
 
 
-import playground.assignments.Assignment2;
+import playground.micsj3.Assignment2;
 
 public class Main {
     public static void main(String[] args) {
