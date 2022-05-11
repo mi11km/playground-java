@@ -7,6 +7,7 @@ class NewFrame extends JFrame {
         this.setTitle("New Frame");
         this.setSize(1200, 800);
         this.setVisible(true);
+        this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
 }
 
